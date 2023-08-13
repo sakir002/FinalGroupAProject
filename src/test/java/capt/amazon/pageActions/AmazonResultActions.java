@@ -1,5 +1,6 @@
 package capt.amazon.pageActions;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import capt.amazon.pageElements.AmazonResultLocators;
@@ -38,7 +39,30 @@ public class AmazonResultActions {
 		}
 	}
 	
+	//Best Seller will appear
+	public void verifyBestSeller() throws Exception	{
+		AmazonResultLocatorsObj.txtBestSeller.isDisplayed();
+	Thread.sleep(5000);
+	}
+
+	//Customer Service page will appear
+	public void verifyCustomerSercvice() throws Exception {
+		AmazonResultLocatorsObj.txtCustomerService.isDisplayed();
+		Thread.sleep(3000);
+		
+	}
+	public void firstCase() throws Exception{
+		AmazonResultLocatorsObj.linkCase.click();
+		Thread.sleep(3000);
+	}
 	
+	public void addcart() throws Exception{
+		AmazonResultLocatorsObj.btnAddcart.click();
+		Thread.sleep(3000);
+	}
 	
-	
+	public void verifyAllBooks() throws Exception{
+		AmazonResultLocatorsObj.verifyBooks.isDisplayed();
+		Thread.sleep(3000);
+	}
 }

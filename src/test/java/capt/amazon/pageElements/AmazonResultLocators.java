@@ -28,5 +28,29 @@ public class AmazonResultLocators {
 		//Validate Dell Items
 		@FindBy(xpath="//span[text()= 'Dell']")
 		public WebElement cbxDell;
+		
+		//verify Best Seller 	
+		@FindBy(xpath="//span[text()= 'Amazon Best Sellers']")
+		public WebElement txtBestSeller;
+
+		//verify Customer Service
+		@FindBy(xpath="(//a[text()='Customer Service'])[2]")
+		public WebElement txtCustomerService;
+		
+		
+		
+		
+		//Validate Laptop Items
+				@FindBy(xpath="//span[contains(text(),'SPIDERCASE Designed for')]")
+				public WebElement linkCase;
+				
+				@FindBy(xpath="//input[@id='add-to-cart-button']")
+				public WebElement btnAddcart;
 	
-}
+				@FindBy(xpath="//body/div[@id='a-page']/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]")
+				public WebElement verifyBooks;
+				
+				
+				
+				}
+
